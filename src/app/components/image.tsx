@@ -79,9 +79,10 @@ const Images = () =>{
     <Slider {...settings}>
      
           
-                <div className='slider-container rounded-xl w-1/2  border-black-[2px] '>
-                    <div className='w-full rounded-xl'>
+                
                     {...images.map((item)=>(
+                      <div className='slider-container rounded-xl w-1/2  border-black-[2px] '>
+                    <div className='w-full rounded-xl'>
                 <Image
                 key={item.id}
                 src={item.image}
@@ -91,10 +92,10 @@ const Images = () =>{
                 className='w-[615px] h-[450px] m-[30px] rounded-xl rounded-tr-xl rounded-br-xl duration-1000 scroll-auto'
                 
                 />
-                
+                </div>
+ </div>
             ))}
-</div>
-</div>
+
      
     </Slider>
   </div>
