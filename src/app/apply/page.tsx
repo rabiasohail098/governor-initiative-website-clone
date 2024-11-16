@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
 const Apply = () => {
   return (
     <div>
+      <Navbar/>
         <form action="form" className=' mb-[6%] ' >
           <div className='border border-gray-200 shadow-lg shadow-gray-400  ml-[30%] w-[40%] p-6 mt-4'>
         <div className='flex flex-col w-[100%]  mt-[6%] mb-[20px]'>
-            <h1 className='text-[25px] font-extrabold text-center text-blue-900'>Student Course Registration Form</h1>
+            <h1 className='text-[25px] font-extrabold text-center text-[#044E83]'>Student Course Registration Form</h1>
             <p className='text-center text-[14px]'>Already applied? <Link href="https://www.gmaill.com" className='underline text-blue-500'>Get Admit Card</Link></p>
             </div>
         <div className='flex flex-col w-[100%] mb-[20px]'>
@@ -25,7 +27,7 @@ const Apply = () => {
             <label htmlFor="Email">Email*</label>
             <div className='flex flex-row'>
             <input type="tel" placeholder='Email' className='border border-slate-400 p-[10px] w-[75%]  bg-gray-100 rounded-s '/>
-            <span className='border border-slate-300 bg-blue-800 text-white text-center pt-[10px] pl-[10px] w-[25%] pr-[10px] rounded-e text-[15px] items-center justify-center'>Send OTP</span>
+            <span className='border border-slate-300 bg-[#044E83] text-white text-center pt-[10px] pl-[10px] w-[25%] pr-[10px] rounded-e text-[15px] items-center justify-center'>Send OTP</span>
             </div>
             </div>
             <div className='flex flex-col w-[100%] mb-[20px]'>
@@ -73,7 +75,7 @@ const Apply = () => {
        </select>
             </div>
             <div className='flex flex-col w-[100%] mt-[6%] mb-[20px]'>
-            <button className='bg-blue-800 font-bold text-white p-[10px]'>SUBMIT</button>
+            <button className='bg-[#044E83] font-bold text-white p-[10px]'>SUBMIT</button>
             </div>
             </div>
         </form>

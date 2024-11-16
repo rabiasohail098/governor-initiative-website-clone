@@ -5,12 +5,12 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     
-    <div className='navbar sticky w-full  bg-blue-800 text-white h-20 rounded-r rounded-e'>
-      <div className='ml-[30px] flex items-center justify-between '>
-        <Image src="/images/logo.png" alt="logo" width={70} height={70} className='mt-14 w-[70px] sm:mt-20 sm:w-[80px] md:w-[90px] text-transparent'/>
+    <div className='flex justify-evenly relative  w-full  bg-[#044E83] text-white h-20 rounded-r rounded-e'>
+      <div className='ml-[40px]  pt-[25px] relative '>
+        <Image src="/images/logo.png" alt="logo" width={70} height={70} className=' w-[70px] sm:w-[80px] md:w-[90px]'/>
       </div>
       <div>
-      <h1 className='text-center mt-7 text-[23px] text-blue-200'>Tuition Free Education Program on Latest Technologies</h1>
+      <h1 className=' text-center mt-7 text-[23px] text-blue-200'>Tuition Free Education Program on Latest Technologies</h1>
       </div>
       <div>
         <ul className='flex text-white gap-4 mt-8 text-[16px]'>
@@ -18,8 +18,9 @@ const Navbar = () => {
           <li><Link href="/apply">Apply</Link></li>
           <li><Link href="/jobs">Jobs</Link></li>
           <li><Link href="/result">Result</Link></li>
-          <li><Link href="/courses">Courses</Link></li>
-          <select className='flex-grow-0 w-[15px] border-none h-full bg-blue-800 py-1 text-white' > 
+          <li><Link href="/"> Courses
+          <select className='flex-grow-0 w-[15px] border-none h-full bg-[#044E83] py-1 text-white' >
+          
             <option className='bg text-[20px] font-bold py-2 h-5' value="core-courses">Core Courses</option>
             <option value="Programming Fundamentials"  className=' h-[15px] bg-white text-black row-gap-3'> <Link href="https://www.governorsindh.com/compulsory/1" >Programming Fundamentials</Link></option>
             <option value="Web2 Using NextJS"  className='bg-white text-black'> <Link href="https://www.governorsindh.com/compulsory/2">Web2 Using NextJS</Link></option>
@@ -33,6 +34,8 @@ const Navbar = () => {
 <option value="Genomics and Bioinformatics" className='bg-white text-black'>            <Link href="https://www.governorsindh.com/tracks/gbs/4">Genomics and Bioinformatics</Link></option>
          <option  value="Network Programmability and Automation" className='bg-white text-black'>   <Link href="https://www.governorsindh.com/tracks/npa/4">Network Programmability and Automatio</Link></option>
             </select> 
+            </Link>
+            </li>
         </ul>
       </div>
     </div>
