@@ -69,8 +69,8 @@ const Apply = () => {
            <option value="Under Middle (Under grade8)">Under Middle (Under grade8)</option>
            <option value="Matric / 0 levels">Matric / O levels</option>
            <option value="Intermadiate / A levels">Intermediate / A levels</option>
-           <option value="Undergraduate (Bachelor's)">Undergraduate (Bachelor's)</option>
-           <option value="Graduate (Master's)">Graduate (Master's)</option>
+           <option value="Undergraduate (Bachelor's)">Undergraduate (Bachelors)</option>
+           <option value="Graduate (Master's)">Graduate (Masters)</option>
             <option value="Post-Graduate (Phd)">Post-Graduate (Phd)</option>
        </select>
             </div>

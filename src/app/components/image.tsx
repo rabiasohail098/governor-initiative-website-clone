@@ -38,7 +38,7 @@ const images= [
 ]
 const Images = () =>{
     
-    var settings = {
+    const settings = {
         dots:true,
         infinite: true,
         speed:500,
@@ -78,9 +78,10 @@ const Images = () =>{
     <div className="slider-container">
     <Slider {...settings}>
      
-            {...images.map((item)=>(
+          
                 <div className='slider-container rounded-xl w-1/2  border-black-[2px] '>
                     <div className='w-full rounded-xl'>
+                    {...images.map((item)=>(
                 <Image
                 key={item.id}
                 src={item.image}
@@ -90,10 +91,10 @@ const Images = () =>{
                 className='w-[615px] h-[450px] m-[30px] rounded-xl rounded-tr-xl rounded-br-xl duration-1000 scroll-auto'
                 
                 />
-                </div>
-                </div>
+                
             ))}
-
+</div>
+</div>
      
     </Slider>
   </div>
